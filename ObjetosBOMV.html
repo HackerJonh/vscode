@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
+
   <body>
     <p id="navegador"></p>
     <p id="navegador2"></p>
@@ -13,10 +14,11 @@
     <p id="navegador4"></p>
     <p id="navegador5"></p>
     <p id="navegador6"></p>
+    <p id="navegador7"></p>
     <script>
       /*Caracteristicas:
-            -Guarda Informacion de el navegador.
-            -No hay un estandar publico pero la mayoria de los navegadores soportan este objeto*/
+              -Guarda Informacion de el navegador.
+              -No hay un estandar publico pero la mayoria de los navegadores soportan este objeto*/
 
       //PROPIEDADES DEL OBJETO NAVIGATOR
 
@@ -46,9 +48,16 @@
       text5 += "<br/>Online: " + navigator.onLine;
       document.getElementById("navegador5").innerHTML = text5;
 
-      //Languaje: Lenguaje del Navegador
-      text6 += "<br/>Idioma: " + navigator.language;
-      document.getElementById("navegador6").innerHTML = text6;
+      //Language: Muestra el lenguaje del navegador
+      var text6 = "";
+      text6 += "<br/>Lenguaje: " + navigator.language;
+      document.getElementById("navegador5").innerHTML = text6;
+
+      //geolocation: Devuelve un objeto geolocoation que puede servir para localizar la posicion del usuario
+
+      var text7 = "";
+      text7 += "<br/>Geolocation: " + navigator.geolocation;
+      document.getElementById("navegador7").innerHTML = text7;
     </script>
   </body>
 </html>
