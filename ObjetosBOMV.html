@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Objetos del Navegador. Navigator</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <p id="navegador"></p>
-        <p id="navegador2"></p>
-        <p id="navegador3"></p>
-        <p id="navegador4"></p>
-        <p id="navegador5"></p>
-        <script>
-            /*Caracteristicas:
+  <head>
+    <title>Objetos del Navegador. Navigator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p id="navegador"></p>
+    <p id="navegador2"></p>
+    <p id="navegador3"></p>
+    <p id="navegador4"></p>
+    <p id="navegador5"></p>
+    <p id="navegador6"></p>
+    <script>
+      /*Caracteristicas:
             -Guarda Informacion de el navegador.
             -No hay un estandar publico pero la mayoria de los navegadores soportan este objeto*/
 
-            //PROPIEDADES DEL OBJETO NAVIGATOR
-            
-            //appCodeName: Codename del navegador
-            var text="";
-            text +="<br/>CodeName: "+navigator.appCodeName;
-            document.getElementById("navegador").innerHTML=text;
+      //PROPIEDADES DEL OBJETO NAVIGATOR
 
-            //appName: AppName del navegador
+      //appCodeName: Codename del navegador
+      var text = "";
+      text += "<br/>CodeName: " + navigator.appCodeName;
+      document.getElementById("navegador").innerHTML = text;
 
-            var text2="";
-            text2+="<br/>AppName: "+navigator.appName;
-            document.getElementById("navegador2").innerHTML=text2;
+      //appName: AppName del navegador
 
-            //appVersion: Muestra la version del navegador
-            var text3="";
-            text3+="<br/>AppVersion: "+navigator.appVersion;
-            document.getElementById("navegador3").innerHTML=text3;
+      var text2 = "";
+      text2 += "<br/>AppName: " + navigator.appName;
+      document.getElementById("navegador2").innerHTML = text2;
 
-            //product: Muestra el motor del navegador:
-            var text4="";
-            text4+="<br/>Product: "+navigator.product;
-            document.getElementById("navegador4").innerHTML=text4;
+      //appVersion: Muestra la version del navegador
+      var text3 = "";
+      text3 += "<br/>AppVersion: " + navigator.appVersion;
+      document.getElementById("navegador3").innerHTML = text3;
 
-            //Online: Muestra si el navegador esta online u offline
-            var text5="";
-            text5+="<br/>Online: "+navigator.onLine;
-            document.getElementById("navegador5").innerHTML=text5;
+      //product: Muestra el motor del navegador:
+      var text4 = "";
+      text4 += "<br/>Product: " + navigator.product;
+      document.getElementById("navegador4").innerHTML = text4;
 
-            
+      //Online: Muestra si el navegador esta online u offline
+      var text5 = "";
+      text5 += "<br/>Online: " + navigator.onLine;
+      document.getElementById("navegador5").innerHTML = text5;
 
-
-        </script>
-    
-    </body>
+      //Languaje: Lenguaje del Navegador
+      text6 += "<br/>Idioma: " + navigator.language;
+      document.getElementById("navegador6").innerHTML = text6;
+    </script>
+  </body>
 </html>
