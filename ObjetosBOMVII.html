@@ -42,6 +42,30 @@
 
         document.getElementById("location").innerHTML=texto;
 
+
+        //METODOS DEL OBJETO LOCATION
+
+        //assign(url):asigna un nuevo documento a la pagina
+
+        function nuevoDocumento(){
+            location.assign("http://www.google.com");
+        }
+
+        //reload(): recarga la pagina
+
+        function recargar(){
+            location.reload();
+        }
+
+        //repalece(url): sustituye la pagina por otra . Desaparece su Historial
+
+        function sustituye(){
+            location.replace("http://www.youtube.com");
+        }
+
     </script>
+    <button onclick="nuevoDocumento">Carga un documento</button>
+    <button onclick="recargar">Recarga la pagina</button>
+    <button onclick="sustituye">Sustituye la pagina</button>
   </body>
 </html>
