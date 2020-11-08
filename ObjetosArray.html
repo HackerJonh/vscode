@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos. Array</title>
+</head>
+<body>
+    <script>
+        //Operaciones Basicas con Arrays
+
+        // 1- Creacion de un array
+        var Animales=["Perro","Gato","Raton","Pajaro"]
+
+        //2- Acceder a los elementos de un Array
+        alert(Animales[2]);
+        
+        //PROPIEDADES:
+        //length: Devuelve la longitud del array
+        document.write("<br/><br/>La longitud del Array es:"+Animales.length);
+
+        //Mostrar los elementos del array uno a uno
+        document.write("<br/>Todos los elementos:");
+        for(var i=0;i<Animales.length;i++){
+            document.write("<br/>"+Animales[i]);
+        }
+
+        //METODOS DE UN ARRAY:
+        
+        //isArray: Devuelve True si el objeto es de Tipo Array
+        document.write("<br/>¿Es un Array:"+Array.isArray[Animales]);
+
+        //instanceOf: Devuelve True si es un array
+        document.write("<br/>¿Seguro que es un Array"+Animales instanceof Array);
+
+        //METODO PARA MOSTRAR UN ARRAY EN FORMA DE CADENA
+        document.write("<br/>El array en forma de string es:"+Animales.toString());
+
+        //join:Convierte el array a cadena separado por un separador indicado por parametro
+        document.write("<br/>El Array con Join es: " +Animales.join("-"));
+    </script>
+    
+</body>
+</html>
