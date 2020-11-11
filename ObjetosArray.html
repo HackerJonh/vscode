@@ -28,16 +28,26 @@
         //METODOS DE UN ARRAY:
         
         //isArray: Devuelve True si el objeto es de Tipo Array
-        document.write("<br/>¿Es un Array:"+Array.isArray[Animales]);
+        document.write("<br/>¿Es un Array: "+Array.isArray(Animales));
 
         //instanceOf: Devuelve True si es un array
-        document.write("<br/>¿Seguro que es un Array"+Animales instanceof Array());
+        document.write("<br/>¿Seguro que es un Array: "+(Animales instanceof Array));
 
         //METODO PARA MOSTRAR UN ARRAY EN FORMA DE CADENA
         document.write("<br/>El array en forma de string es:"+Animales.toString());
 
         //join:Convierte el array a cadena separado por un separador indicado por parametro
         document.write("<br/>El Array con Join es: " +Animales.join("-"));
+
+        //METODOS PARA AÑADIR EXTRAER O BORRAR ELEMENTOS
+        
+        //pop():Extrae el ultimo elemento del array
+        //shift(): Extrae el primer elemento del array
+
+        var ultimo=Animales.pop();
+        document.write("<br/>Despues de sacar: "+ultimo+" Quedan :"+Animales.toString());
+
+        //delete nombreArray[indice]: Elimina el elemento y lo transforma en undefine
     </script>
     
 </body>
