@@ -12,7 +12,27 @@
     <h3 id="w3canonimas">Modelo W3C Anonima</h3>
 
     <script>
-        document.getElementById("w3c").addEventListener("click",Saludar,false);
+        document.getElementById("w3c").addEventListener("click",Saludar,true);
+        document.getElementById("w3c").addEventListener("click",colorearse,false);
+        document.getElementById("w3c").addEventListener("mouseover",fondo,false);
+        document.getElementById("w3c").addEventListener("mouseout",out,false); 
+
+        //FUNCIONES:
+        function Saludar(){
+            alert("Hola Pendejo");
+        }
+
+        function colorearse(){
+            document.getElementById("w3c").style.color="red";
+        }
+
+        function fondo(){
+            document.getElementById("w3c").style.background="gray";
+        }
+
+        function out(){
+            document.getElementById("w3c").style.background="white";
+        }
     </script>
 </body>
 </html>
