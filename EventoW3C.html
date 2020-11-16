@@ -20,6 +20,8 @@
         //FUNCIONES:
         function Saludar(){
             alert("Hola Pendejo");
+            //Eliminar un Evento
+            document.getElementById("w3c").removeEventListener("click",Saludar);
         }
 
         function colorearse(){
@@ -33,6 +35,11 @@
         function out(){
             document.getElementById("w3c").style.background="white";
         }
+
+        //FUNCIONES ANONIMAS
+        document.getElementById("w3canonimas").addEventListener("click",function(){
+            this.style.background="gray";
+        });
     </script>
 </body>
 </html>
