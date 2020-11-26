@@ -4,12 +4,19 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true,
+    "python.testing.pytestEnabled": false,
     "files.autoSave": "afterDelay",
-<<<<<<< HEAD
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true
-=======
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
->>>>>>> a8130914ca831b07100ce67d4142fcc9c9249c8b
+    "python.testing.promptToConfigure": false,
+    "python.pythonPath":"C:\\Users\\Nathalie\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "githubIssues.queries": [
+
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        }
+    ]
 }
